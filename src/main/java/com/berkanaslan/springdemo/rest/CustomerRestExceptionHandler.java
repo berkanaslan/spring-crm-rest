@@ -1,6 +1,5 @@
 package com.berkanaslan.springdemo.rest;
 
-import com.mysql.fabric.Response;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -30,6 +29,4 @@ public class CustomerRestExceptionHandler {
 
         return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
     }
-
-
 }
