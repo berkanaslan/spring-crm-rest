@@ -39,4 +39,10 @@ public class CustomerRestController {
         return customer;
     }
 
+    @PatchMapping("/customers")
+    public Customer updateCustomer(@RequestBody Customer customer) {
+        customerService.saveCustomer(customer);
+        return customer;
+    }
+
 }
